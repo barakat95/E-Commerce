@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
@@ -12,10 +11,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   imports: [
     NzDrawerModule,
     NzLayoutModule,
-    NzBreadCrumbModule,
     NzMenuModule,
     NzIconModule,
-    CommonModule
+    NzBreadCrumbModule,
   ],
   exports: [
     NzDrawerModule,

@@ -1,14 +1,9 @@
 <nz-layout class="layout">
-    <nz-header>
-        <div class="logo" (click)="openComponent()"><i nz-icon nzType="menu-unfold" nzTheme="outline"></i></div>
-        <ul nz-menu nzTheme="dark" nzMode="horizontal">
-            <li nz-menu-item>nav 1</li>
-            <li nz-menu-item>nav 2</li>
-            <li nz-menu-item>nav 3</li>
-        </ul>
-    </nz-header>
+    <app-header></app-header>
     <nz-content>
-        <div class="inner-content">Content</div>
+        <div class="inner-content">
+            <router-outlet></router-outlet>
+        </div>
     </nz-content>
-    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+    <app-footer></app-footer>
 </nz-layout>
