@@ -1,31 +1,89 @@
 .logo {
     display: flex;
     align-items: center;
-    width: 120px;
-    height: 30px;
-    // background: rgba(255, 255, 255, 0.2);
-    margin: 16px 24px 16px 0;
-    float: left;
     color: #fff;
     cursor: pointer;
-}
-
-.icon {
-    font-size: 16px;
 }
 
 h1 {
     color: #fff;
     margin-bottom: 0;
     margin-left: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nz-header {
-    position: fixed;
     width: 100%;
+    height: fit-content;
+}
+
+nz-row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+nz-row:last-child {
+    justify-content: flex-end;
+}
+
+.upper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower-header {
+    background-color: #fcfcfc;
 }
 
 [nz-menu] {
-    line-height: 64px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    background-color: #fcfcfc;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    line-height: 46px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-action:hover {
+    color: #001529;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.drawer {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header-action em {
+    margin: 0px 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.head-example {
+    position: absolute;
+    left: -5px;
+    top: -5px;
 }

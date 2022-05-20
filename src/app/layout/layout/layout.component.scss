@@ -2,11 +2,6 @@
     min-height: 100vh;
 }
 
-nz-content {
-    // padding: 0 50px;
-    margin-top: 64px;
-}
-
 nz-breadcrumb {
     margin: 16px 0;
 }
@@ -14,5 +9,5 @@ nz-breadcrumb {
 .inner-content {
     background: #fff;
     padding: 24px 52px;
-    min-height: calc(100vh - 134px);
+    min-height: calc(100vh - 134px - 47px);
 }
