@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DrawerComponent } from '../drawer/drawer.component';
 import { NzDrawerService } from 'ng-zorro-antd/drawer';
+import { SharedService } from './../../services/shared.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +11,13 @@ import { NzDrawerService } from 'ng-zorro-antd/drawer';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private drawerService: NzDrawerService) { }
-
-  ngOnInit(): void {
+  constructor(private drawerService: NzDrawerService, private sharedService: SharedService, public translateService: TranslateService) {
+    translateService.addLangs(['en', 'ar']);
+    translateService.setDefaultLang('en');
+    this.sharedService.language = localStorage.getItem('language') || 'en';
   }
+
+  ngOnInit(): void { }
 
   openDrawer(): void {
     const drawerRef = this.drawerService.create<DrawerComponent, { value: string }, string>({
@@ -46,4 +51,14 @@ export class HeaderComponent implements OnInit {
     this.options = value ? [value, value + value, value + value + value] : [];
   }
 
+  changeLanguage(): void {
+    if (localStorage.getItem('language') === 'ar') {
+      this.translateService.use('en');
+      localStorage.setItem('language', 'en');
+    } else {
+      this.translateService.use('ar');
+      localStorage.setItem('language', 'ar');
+    }
+  }
 }
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'e-commerce';
+  textDir = 'ltr';
 
-  constructor() { }
-
-  
+  constructor(private translate: TranslateService) {
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      if (event.lang == 'ar') {
+        this.textDir = 'rtl';
+      }
+      else {
+        this.textDir = 'ltr';
+      }
+    });
+  }
 }
 

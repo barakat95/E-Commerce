@@ -4,24 +4,26 @@
             <div class="logo">
                 <img src="./assets/logo.png" alt="logo" srcset="">
                 <h1>
-                    Alibaba
+                    {{ 'HEADER.title' | translate }}
                 </h1>
             </div>
         </div>
         <div nz-col [nzLg]="12" [nzMd]="24" [nzSm]="24" [nzXs]="24">
             <div class="example-input">
-                <input placeholder="What are you looking for?" nz-input [(ngModel)]="inputValue" (input)="onInput($event)" [nzAutocomplete]="auto" />
+                <input placeholder="{{'HEADER.search' | translate}}" nz-input [(ngModel)]="inputValue" (input)="onInput($event)" [nzAutocomplete]="auto" />
                 <nz-autocomplete [nzDataSource]="options" nzBackfill #auto></nz-autocomplete>
             </div>
         </div>
         <div nz-col [nzLg]="6" [nzMd]="12">
             <div class="header-actions">
-                <span class="header-action">العربية</span>
+                <span class="header-action" (click)="changeLanguage()">{{'HEADER.lang' | translate}}</span>
                 <span class="header-action">
-                    <em nz-icon nzType="user" nzTheme="outline"></em> Login
+                    <em nz-icon nzType="user" nzTheme="outline"></em> {{'HEADER.login' | translate}}
                 </span>
                 <span class="header-action">
-                    <em nz-icon nzType="shopping-cart" nzTheme="outline" class="cart-icon"><nz-badge [nzCount]="5" class="head-example"> </nz-badge></em> Cart
+                    <em nz-icon nzType="shopping-cart" nzTheme="outline" class="cart-icon">
+                        <nz-badge [nzCount]="5" class="head-example"> </nz-badge>
+                    </em> {{'HEADER.cart' | translate}}
                 </span>
             </div>
         </div>
