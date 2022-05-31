@@ -1,0 +1,13 @@
+<nz-carousel [nzEffect]="'fade'" nzAutoPlay>
+    <div nz-carousel-content *ngFor="let index of array">
+        <div class="content">
+            <div class="container">
+                <img [src]="index">
+                <!-- <h3>{{ index }}</h3>
+                    <p>{{ 'HOME.text' | translate }}</p> -->
+            </div>
+        </div>
+    </div>
+</nz-carousel>
+<button nz-button (click)="pre()">prev</button>
+<button nz-button (click)="next()">next</button>

@@ -1,12 +1,9 @@
-import { LOCALE_ID, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NZ_I18N, en_US, ar_EG } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-// import en from '@angular/common/locales/en';
-import ar from '@angular/common/locales/ar';
+import { NZ_I18N, ar_EG } from 'ng-zorro-antd/i18n';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

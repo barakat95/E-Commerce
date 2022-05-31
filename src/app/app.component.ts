@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
+import { SharedService } from './services/shared.service';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +9,9 @@ import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'e-commerce';
-  textDir = 'ltr';
-
-  constructor(private translate: TranslateService) {
-    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      if (event.lang == 'ar') {
-        this.textDir = 'rtl';
-      }
-      else {
-        this.textDir = 'ltr';
-      }
-    });
+  constructor(private translateService: TranslateService, private sharedService: SharedService) {
+    this.sharedService.language = localStorage.getItem('language') || 'en';
+    translateService.setDefaultLang(this.sharedService.language);
   }
 }
 

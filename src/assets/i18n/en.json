@@ -1,9 +1,16 @@
 {
+    "dir": "ltr",
     "HEADER": {
         "title": "Alibaba",
         "lang": "العربية",
         "login": "Login",
         "cart": "Cart",
         "search": "What are you looking for?"
+    },
+    "FOOTER": {
+        "copyright": "Copyright © 2019 Alibaba.com. All rights reserved."
+    },
+    "HOME": {
+        "text": "The best ecommerce platform for your business"
     }
 }

@@ -1,0 +1,34 @@
+nz-radio-group {
+    margin-bottom: 8px;
+}
+
+[nz-carousel-content] {
+    text-align: center;
+    height: 40vh;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .container {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    h3 {
+        color: #fff;
+        margin-bottom: 0;
+        user-select: none;
+    }
+}
+
+.action {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}

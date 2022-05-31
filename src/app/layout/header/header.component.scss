@@ -2,14 +2,16 @@
     display: flex;
     align-items: center;
     color: #fff;
-    cursor: pointer;
-}
-
-h1 {
-    color: #fff;
-    margin-bottom: 0;
-    margin-left: 16px;
-    font-family: 'Montserrat', sans-serif;
+    img {
+        cursor: pointer;
+    }
+    h1 {
+        padding: 0 16px;
+        color: #fff;
+        margin-bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+    }
 }
 
 nz-header {
@@ -52,15 +54,16 @@ nz-row:last-child {
     align-items: center;
     justify-content: flex-end;
     color: #fff;
-}
-
-.header-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 16px;
-    cursor: pointer;
-    position: relative;
+    .header-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 16px;
+        cursor: pointer;
+        position: relative;
+        font-weight: 600;
+        font-size: 16px;
+    }
 }
 
 .header-action:hover {
@@ -71,19 +74,19 @@ nz-row:last-child {
     position: relative;
 }
 
-.drawer {
-    cursor: pointer;
-    font-size: 20px;
+.cart-number {
+    position: absolute;
+    right: -5px;
+    top: -10px;
 }
 
 .header-action em {
     margin: 0px 8px;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
 }
 
-.head-example {
-    position: absolute;
-    left: -5px;
-    top: -5px;
+.drawer {
+    cursor: pointer;
+    font-size: 20px;
 }

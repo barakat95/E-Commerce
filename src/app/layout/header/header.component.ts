@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DrawerComponent } from '../drawer/drawer.component';
 import { NzDrawerService } from 'ng-zorro-antd/drawer';
-import { SharedService } from './../../services/shared.service';
 import { TranslateService } from '@ngx-translate/core';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(private drawerService: NzDrawerService, private sharedService: SharedService, public translateService: TranslateService) {
-    translateService.addLangs(['en', 'ar']);
-    translateService.setDefaultLang('en');
-    this.sharedService.language = localStorage.getItem('language') || 'en';
-  }
+  
+  constructor(private drawerService: NzDrawerService, public translateService: TranslateService, public sharedService: SharedService) { }
 
   ngOnInit(): void { }
 

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VendorModule } from '../vendor/vendor.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -10,6 +11,6 @@ import { VendorModule } from '../vendor/vendor.module';
     CommonModule,
     VendorModule
   ],
-  exports: [VendorModule]
+  exports: [VendorModule, TranslateModule]
 })
 export class SharedModule { }
