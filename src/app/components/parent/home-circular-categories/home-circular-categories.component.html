@@ -1,0 +1,14 @@
+<div class="categories-container">
+    <div nz-row>
+        <div nz-col nzSpan="3" *ngFor="let category of categories; let i = index">
+            <div class="category">
+                <div class="category-image">
+                    <img [src]="category" alt="category">
+                </div>
+                <div class="category-name">
+                    <h3>Category {{i+1}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

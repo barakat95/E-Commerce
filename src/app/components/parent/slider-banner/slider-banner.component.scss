@@ -2,9 +2,19 @@ nz-radio-group {
     margin-bottom: 8px;
 }
 
+.carousel-container {
+    position: relative;
+    &:hover {
+        .prev-arrow,
+        .next-arrow {
+            opacity: 1;
+        }
+    }
+}
+
 [nz-carousel-content] {
     text-align: center;
-    height: 40vh;
+    height: 50vh;
     background: #364d79;
     color: #fff;
     overflow: hidden;
@@ -13,7 +23,7 @@ nz-radio-group {
         align-items: center;
         justify-content: center;
         height: 100%;
-        .container {
+        .layer {
             width: 100%;
             img {
                 width: 100%;
@@ -27,8 +37,32 @@ nz-radio-group {
     }
 }
 
-.action {
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
+.prev-arrow,
+.next-arrow {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+    &:hover {
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+    }
+}
+
+.next-arrow {
+    right: 16px;
+}
+
+.prev-arrow {
+    left: 16px;
 }

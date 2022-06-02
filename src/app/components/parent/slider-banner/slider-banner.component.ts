@@ -11,15 +11,13 @@ export class SliderBannerComponent implements OnInit {
 
   @ViewChild(NzCarouselComponent, { static: false }) myCarousel: any;
 
-  public array = ['https://www.seekpng.com/png/full/257-2579468_chinese-new-years-special-offer-outlet-banner.png',
-    'https://www.pikpng.com/pngl/m/241-2417669_ribbon-png-youtube-thumbnail-banners-banner-posters-transparent.png',
-    'https://media.istockphoto.com/vectors/sale-banner-template-discount-poster-design-price-off-special-offer-vector-id1136421303'];
+  public array = ['./assets/images/banner/banner1.jpg', './assets/images/banner/banner2.jpg', './assets/images/banner/banner3.jpg'];
 
   constructor() { }
 
   ngOnInit(): void { }
 
-  pre() {
+  prev() {
     this.myCarousel.pre();
   }
 
