@@ -2,28 +2,39 @@
     <div nz-row>
         <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
             <div class="logo">
-                <img src="./assets/logo.png" alt="logo" srcset="">
+                <!-- <img src="./assets/logo.png" alt="logo" srcset=""> -->
+                <em nz-icon nzType="alibaba" nzTheme="outline"></em>
                 <h1>
                     {{ 'HEADER.title' | translate }}
                 </h1>
             </div>
         </div>
         <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
-            <div class="example-input">
-                <input placeholder="{{'HEADER.search' | translate}}" nz-input [(ngModel)]="inputValue" (input)="onInput($event)" [nzAutocomplete]="auto" />
+            <div class="search">
+                <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixIconButton">
+                    <input placeholder="{{'HEADER.search' | translate}}" nz-input [(ngModel)]="inputValue" (input)="onInput($event)" [nzAutocomplete]="auto" />
+                </nz-input-group>
+                <ng-template #suffixIconButton>
+                    <button nz-button nzType="primary" nzSize="large" nzSearch class="search-icon">
+                      <i nz-icon nzType="search" nzTheme="outline"></i>
+                    </button>
+                </ng-template>
                 <nz-autocomplete [nzDataSource]="options" nzBackfill #auto></nz-autocomplete>
             </div>
         </div>
         <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
             <div class="header-actions">
-                <span class="header-action" (click)="changeLanguage()">{{'HEADER.lang' | translate}}</span>
+                <span class="header-action" (click)="changeLanguage()">
+                    {{'HEADER.lang' | translate}}</span>
                 <span class="header-action">
-                    <em nz-icon nzType="user" nzTheme="outline"></em> {{'HEADER.login' | translate}}
+                    <em nz-icon nzType="user" nzTheme="outline"></em> 
+                    <!-- {{'HEADER.login' | translate}} -->
                 </span>
                 <span class="header-action">
                     <em nz-icon nzType="shopping-cart" nzTheme="outline" class="cart-icon">
                         <nz-badge [nzCount]="5" class="cart-number"> </nz-badge>
-                    </em> {{'HEADER.cart' | translate}}
+                    </em> 
+                    <!-- {{'HEADER.cart' | translate}} -->
                 </span>
             </div>
         </div>
@@ -31,9 +42,9 @@
 </nz-header>
 <nz-header class="lower-header">
     <ul nz-menu nzMode="horizontal" nzType="down">
-        <span class="drawer" (click)="openDrawer()">
+        <!-- <span class="drawer" (click)="openDrawer()">
             <em nz-icon nzType="menu" nzTheme="outline"></em>
-        </span>
+        </span> -->
         <li nz-submenu nzTitle="All Categories" nzIcon="down">
             <ul>
                 <li nz-menu-group nzTitle="Item 2">

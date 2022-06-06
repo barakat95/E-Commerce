@@ -1,13 +1,15 @@
 .logo {
     display: flex;
     align-items: center;
-    color: #fff;
-    img {
-        cursor: pointer;
+    color: #25282b;
+    cursor: pointer;
+    em {
+        font-size: 32px;
+        font-weight: bold;
     }
     h1 {
         padding: 0 16px;
-        color: #fff;
+        color: #25282b;
         margin-bottom: 0;
         font-family: 'Montserrat', sans-serif;
         cursor: pointer;
@@ -17,6 +19,26 @@
 nz-header {
     width: 100%;
     height: fit-content;
+    background-color: #fff;
+    padding: 8px 128px;
+    border-bottom: #e7e8ea 1px solid;
+    nz-input-group {
+        input {
+            border: #f19d50 1px solid;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+    }
+    .search-icon {
+        background-color: #f19d50;
+        color: #fff;
+        line-height: 40px;
+        padding: 0 16px;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+    }
 }
 
 nz-row {
@@ -35,25 +57,31 @@ nz-row:last-child {
 }
 
 .lower-header {
-    background-color: #fcfcfc;
+    background-color: #fff;
+    border-bottom: none;
+    padding: 0 128px;
+    box-shadow: -1px 5px 4px 0px rgba(0, 0, 0, 0.75);
 }
 
 [nz-menu] {
+     :first-child {
+        padding-left: 0;
+    }
     font-weight: 500;
     display: flex;
     align-items: center;
-    background-color: #fcfcfc;
+    background-color: #fff;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    line-height: 46px;
+    // line-height: 46px;
 }
 
 .header-actions {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: #fff;
+    color: #25282b;
     .header-action {
         display: flex;
         align-items: center;
@@ -62,12 +90,12 @@ nz-row:last-child {
         cursor: pointer;
         position: relative;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
 .header-action:hover {
-    color: chocolate;
+    // color: chocolate;
 }
 
 .cart-icon {
@@ -76,13 +104,13 @@ nz-row:last-child {
 
 .cart-number {
     position: absolute;
-    right: -5px;
-    top: -10px;
+    right: -8px;
+    top: -16px;
 }
 
 .header-action em {
     margin: 0px 8px;
-    font-size: 32px;
+    // font-size: 16px;
     cursor: pointer;
 }
 
