@@ -1,0 +1,17 @@
+.card {
+    border-radius: 8px;
+}
+
+[nz-row] {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 16px;
+}
+
+.image {
+    img {
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+}

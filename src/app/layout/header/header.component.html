@@ -2,7 +2,6 @@
     <div nz-row>
         <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
             <div class="logo">
-                <!-- <img src="./assets/logo.png" alt="logo" srcset=""> -->
                 <em nz-icon nzType="alibaba" nzTheme="outline"></em>
                 <h1>
                     {{ 'HEADER.title' | translate }}
@@ -10,15 +9,8 @@
             </div>
         </div>
         <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
-            <div class="search">
-                <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixIconButton">
-                    <input placeholder="{{'HEADER.search' | translate}}" nz-input [(ngModel)]="inputValue" (input)="onInput($event)" [nzAutocomplete]="auto" />
-                </nz-input-group>
-                <ng-template #suffixIconButton>
-                    <button nz-button nzType="primary" nzSize="large" nzSearch class="search-icon">
-                      <i nz-icon nzType="search" nzTheme="outline"></i>
-                    </button>
-                </ng-template>
+            <div class="header-search">
+                <input placeholder="{{ 'HEADER.search' | translate }}" nz-input [(ngModel)]="inputValue" (input)="onInput($event)" [nzAutocomplete]="auto" />
                 <nz-autocomplete [nzDataSource]="options" nzBackfill #auto></nz-autocomplete>
             </div>
         </div>
@@ -27,13 +19,16 @@
                 <span class="header-action" (click)="changeLanguage()">
                     {{'HEADER.lang' | translate}}</span>
                 <span class="header-action">
-                    <em nz-icon nzType="user" nzTheme="outline"></em> 
-                    <!-- {{'HEADER.login' | translate}} -->
+                    <em nz-icon nzType="user" nzTheme="outline"></em>
+                </span>
+                <span class="header-action">
+                    <em nz-icon nzType="heart" nzTheme="outline"></em>
                 </span>
                 <span class="header-action">
                     <em nz-icon nzType="shopping-cart" nzTheme="outline" class="cart-icon">
-                        <nz-badge [nzCount]="5" class="cart-number"> </nz-badge>
-                    </em> 
+                        <nz-badge [nzCount]="5" class="cart-number" [nzStyle]="{ backgroundColor: '#f19d50' }">
+                        </nz-badge>
+                    </em>
                     <!-- {{'HEADER.cart' | translate}} -->
                 </span>
             </div>
@@ -74,22 +69,28 @@
             </ul>
         </li>
         <li nz-menu-item nzSelected>
-            Navigation One
+            Navigation
         </li>
         <li nz-menu-item>
-            Navigation One
+            Navigation
         </li>
         <li nz-menu-item>
-            Navigation One
+            Navigation
         </li>
         <li nz-menu-item>
-            Navigation One
+            Navigation
         </li>
         <li nz-menu-item>
-            Navigation One
+            Navigation
         </li>
         <li nz-menu-item>
-            Navigation One
+            Navigation
+        </li>
+        <li nz-menu-item>
+            Navigation
+        </li>
+        <li nz-menu-item>
+            Navigation
         </li>
         <li nz-menu-item>
             <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Link</a>

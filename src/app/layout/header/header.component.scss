@@ -1,7 +1,9 @@
+$border-radious: 8px;
+// $border-width: 2px;
 .logo {
     display: flex;
     align-items: center;
-    color: #25282b;
+    color: #f19d50;
     cursor: pointer;
     em {
         font-size: 32px;
@@ -9,7 +11,7 @@
     }
     h1 {
         padding: 0 16px;
-        color: #25282b;
+        color: #f19d50;
         margin-bottom: 0;
         font-family: 'Montserrat', sans-serif;
         cursor: pointer;
@@ -22,22 +24,11 @@ nz-header {
     background-color: #fff;
     padding: 8px 128px;
     border-bottom: #e7e8ea 1px solid;
-    nz-input-group {
-        input {
-            border: #f19d50 1px solid;
-            border-top-left-radius: 8px;
-            border-bottom-left-radius: 8px;
-        }
-    }
-    .search-icon {
-        background-color: #f19d50;
-        color: #fff;
-        line-height: 40px;
-        padding: 0 16px;
-        border: none;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        cursor: pointer;
+    .header-search input {
+        border: #f19d50 1px solid;
+        border-radius: $border-radious;
+        // border-width: $border-width;
+        padding: 4px 8px;
     }
 }
 
@@ -70,6 +61,7 @@ nz-row:last-child {
     font-weight: 500;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     width: 100%;
     overflow-x: auto;

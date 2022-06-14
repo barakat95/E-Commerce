@@ -9,6 +9,7 @@ import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 
 
@@ -24,7 +25,8 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     NzInputModule,
     NzBadgeModule,
     NzGridModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NzButtonModule
   ],
   exports: [
     NzDrawerModule,
@@ -36,7 +38,8 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     NzInputModule,
     NzBadgeModule,
     NzGridModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NzButtonModule
   ]
 })
 export class VendorModule { }

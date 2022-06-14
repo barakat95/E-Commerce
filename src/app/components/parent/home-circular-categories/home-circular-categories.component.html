@@ -1,14 +1,15 @@
-<div class="categories-container">
-    <!-- <div nz-row> -->
-    <div *ngFor="let category of categories; let i = index">
-        <div class="category">
-            <div class="category-image">
-                <img [src]="category" alt="category">
-            </div>
-            <div class="category-name">
-                <h3>Category {{i+1}}</h3>
+<div class="section-categories">
+    <h2>{{ 'HOME-CIRCULAR-CATEORIES.title' | translate }}</h2>
+    <div class="categories-container">
+        <div *ngFor="let category of categories; let i = index">
+            <div class="category">
+                <div class="category-image">
+                    <img [src]="category" alt="category">
+                </div>
+                <div class="category-name">
+                    <h3>Category {{i+1}}</h3>
+                </div>
             </div>
         </div>
-        <!-- </div> -->
     </div>
 </div>

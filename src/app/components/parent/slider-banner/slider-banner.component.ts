@@ -11,7 +11,7 @@ export class SliderBannerComponent implements OnInit {
 
   @ViewChild(NzCarouselComponent, { static: false }) myCarousel: any;
 
-  public array = ['./assets/images/banner/banner1.jpg', './assets/images/banner/banner2.jpg', './assets/images/banner/banner3.jpg'];
+  public array = ['./assets/images/banner/banner1.jpg', './assets/images/banner/banner2.jpg', './assets/images/banner/banner3.jpg', './assets/images/banner/banner4.jpg', 'https://w7.pngwing.com/pngs/815/461/png-transparent-technology-toy-technology-electronics-sale-banner-brand.png'];
 
   constructor() { }
 
