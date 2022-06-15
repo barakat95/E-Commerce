@@ -1,9 +1,10 @@
-$border-radious: 8px;
-// $border-width: 2px;
+@import "./../../styles/colors.scss";
+@import "./../../styles/text.scss";
+@import "./../../styles/border-radius.scss";
 .logo {
     display: flex;
     align-items: center;
-    color: #f19d50;
+    color: $main-color;
     cursor: pointer;
     em {
         font-size: 32px;
@@ -11,9 +12,8 @@ $border-radious: 8px;
     }
     h1 {
         padding: 0 16px;
-        color: #f19d50;
+        color: $main-color;
         margin-bottom: 0;
-        font-family: 'Montserrat', sans-serif;
         cursor: pointer;
     }
 }
@@ -25,9 +25,8 @@ nz-header {
     padding: 8px 128px;
     border-bottom: #e7e8ea 1px solid;
     .header-search input {
-        border: #f19d50 1px solid;
+        border: $main-color 1px solid;
         border-radius: $border-radious;
-        // border-width: $border-width;
         padding: 4px 8px;
     }
 }
@@ -35,10 +34,9 @@ nz-header {
 nz-row {
     align-items: center;
     justify-content: space-between;
-}
-
-nz-row:last-child {
-    justify-content: flex-end;
+    &:last-child {
+        justify-content: flex-end;
+    }
 }
 
 .upper-header {
@@ -66,7 +64,6 @@ nz-row:last-child {
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    // line-height: 46px;
 }
 
 .header-actions {
@@ -83,30 +80,44 @@ nz-row:last-child {
         position: relative;
         font-weight: 600;
         font-size: 18px;
+        &:hover {
+            color: $main-color;
+        }
     }
-}
-
-.header-action:hover {
-    // color: chocolate;
 }
 
 .cart-icon {
     position: relative;
-}
-
-.cart-number {
-    position: absolute;
-    right: -8px;
-    top: -16px;
-}
-
-.header-action em {
-    margin: 0px 8px;
-    // font-size: 16px;
-    cursor: pointer;
+    .cart-number {
+        position: absolute;
+        right: -8px;
+        top: -16px;
+    }
 }
 
 .drawer {
     cursor: pointer;
     font-size: 20px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    nz-header {
+        padding: 8px 16px;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .large-view {
+        display: none;
+    }
+    .header-action {
+        padding: 0px 4px;
+    }
+    .lower-header {
+        padding: 0 16px;
+    }
 }

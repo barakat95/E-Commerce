@@ -1,12 +1,18 @@
+@import "./../../../styles/border-radius.scss";
 .card {
-    border-radius: 8px;
+    border-radius: $border-radious;
+    margin: 8px 0;
+    width: 100%;
+    button {
+        border-radius: $border-radious;
+    }
 }
 
 [nz-row] {
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 16px;
+    padding: 8px;
 }
 
 .image {

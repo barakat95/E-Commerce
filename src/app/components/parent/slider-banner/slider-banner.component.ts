@@ -11,7 +11,9 @@ export class SliderBannerComponent implements OnInit {
 
   @ViewChild(NzCarouselComponent, { static: false }) myCarousel: any;
 
-  public array = ['./assets/images/banner/banner1.jpg', './assets/images/banner/banner2.jpg', './assets/images/banner/banner3.jpg', './assets/images/banner/banner4.jpg', 'https://w7.pngwing.com/pngs/815/461/png-transparent-technology-toy-technology-electronics-sale-banner-brand.png'];
+  public array = ['https://appliance.com.eg/wp-content/uploads/2022/01/Dana-2.png',
+    'https://png.pngitem.com/pimgs/s/527-5276265_electronic-and-furniture-hd-png-download.png',
+    'https://www.kindpng.com/picc/m/247-2474628_electronics-items-png-facebook-shop-cover-design-transparent.png',];
 
   constructor() { }
 

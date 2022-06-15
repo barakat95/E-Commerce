@@ -1,11 +1,30 @@
 <nz-header>
     <div nz-row>
-        <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
+        <div nz-col [nzLg]="8" [nzMd]="12" [nzSm]="12" [nzXs]="12">
             <div class="logo">
                 <em nz-icon nzType="alibaba" nzTheme="outline"></em>
                 <h1>
                     {{ 'HEADER.title' | translate }}
                 </h1>
+            </div>
+        </div>
+        <div nz-col [nzLg]="8" [nzMd]="12" [nzSm]="12" [nzXs]="12" class="mobile-view">
+            <div class="header-actions">
+                <span class="header-action" (click)="changeLanguage()">
+                    {{'HEADER.lang' | translate}}</span>
+                <span class="header-action">
+                    <em nz-icon nzType="user" nzTheme="outline"></em>
+                </span>
+                <span class="header-action">
+                    <em nz-icon nzType="heart" nzTheme="outline"></em>
+                </span>
+                <span class="header-action">
+                    <em nz-icon nzType="shopping-cart" nzTheme="outline" class="cart-icon">
+                        <nz-badge [nzCount]="5" class="cart-number" [nzStyle]="{ backgroundColor: '#f19d50' }">
+                        </nz-badge>
+                    </em>
+                    <!-- {{'HEADER.cart' | translate}} -->
+                </span>
             </div>
         </div>
         <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
@@ -14,7 +33,7 @@
                 <nz-autocomplete [nzDataSource]="options" nzBackfill #auto></nz-autocomplete>
             </div>
         </div>
-        <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24">
+        <div nz-col [nzLg]="8" [nzMd]="24" [nzSm]="24" [nzXs]="24" class="large-view">
             <div class="header-actions">
                 <span class="header-action" (click)="changeLanguage()">
                     {{'HEADER.lang' | translate}}</span>

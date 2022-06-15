@@ -11,3 +11,9 @@ nz-breadcrumb {
     padding: 0 128px 24px 128px;
     min-height: calc(100vh - 134px - 47px);
 }
+
+@media screen and (max-width:991px) {
+    .inner-content {
+        padding: 0 4px 16px 4px;
+    }
+}
