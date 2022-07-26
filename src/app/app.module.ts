@@ -13,8 +13,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { ParentComponent } from './components/parent/parent.component';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SliderBannerComponent } from './components/parent/slider-banner/slider-banner.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -30,7 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     ParentComponent,
-    SliderBannerComponent,    
+    SliderBannerComponent
   ],
   imports: [
     BrowserModule,

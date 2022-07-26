@@ -15,5 +15,15 @@
     },
     "HOME-CIRCULAR-CATEORIES": {
         "title": "تسوق حسب الفئة"
+    },
+    "LATEST-RELEASES": {
+        "item_title": "آخر الإصدارات",
+        "item_name": "سماعات الرأس",
+        "item_button": "تسوق الآن"
+    },
+    "SECTION-HEADER": {
+        "link": "المزيد",
+        "title": "المقترحة لك"
     }
+
 }

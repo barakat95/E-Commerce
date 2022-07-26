@@ -15,5 +15,14 @@
     },
     "HOME-CIRCULAR-CATEORIES": {
         "title": "Shop by Category"
+    },
+    "LATEST-RELEASES": {
+        "item_title": "Latest releases",
+        "item_name": "Headphones",
+        "item_button": "Shop now"
+    },
+    "SECTION-HEADER": {
+        "link": "See all",
+        "title": "Recommended for you"
     }
 }

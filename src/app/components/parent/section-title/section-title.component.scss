@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+
+h2 {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+h2:before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 32px;
+    background-color: red;
+    margin: 0 8px;
+}
