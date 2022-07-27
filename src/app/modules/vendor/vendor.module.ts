@@ -11,6 +11,7 @@ import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzRateModule } from 'ng-zorro-antd/rate';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 
 
 
@@ -28,7 +29,8 @@ import { NzRateModule } from 'ng-zorro-antd/rate';
     NzGridModule,
     NzCarouselModule,
     NzButtonModule,
-    NzRateModule
+    NzRateModule,
+    NzProgressModule
   ],
   exports: [
     NzDrawerModule,
@@ -42,7 +44,8 @@ import { NzRateModule } from 'ng-zorro-antd/rate';
     NzGridModule,
     NzCarouselModule,
     NzButtonModule,
-    NzRateModule
+    NzRateModule,
+    NzProgressModule
   ]
 })
 export class VendorModule { }

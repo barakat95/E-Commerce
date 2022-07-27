@@ -1,6 +1,32 @@
-@import "./../../../styles/text.scss";
-@import "./../../../styles/colors.scss";
-@import "./../../../styles/border-radius.scss";
+@import "../../../styles/colors.scss";
+@import "../../../styles/border-radius.scss";
+@import "../../../styles/text.scss";
+.section-header-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .card-desc {
+        // color: white;
+        h4 {
+            // color: white;
+            font-size: 16px;
+        }
+    }
+}
+
+.active {
+    background-color: $main-color;
+    .card-desc {
+        color: black;
+        h4 {
+            color: black;
+            font-size: 16px;
+        }
+    }
+}
+
+// To be deleted
 .card {
     background-color: white;
     border-radius: $border-radius;

@@ -9,10 +9,20 @@ import { LatestReleasesComponent } from 'src/app/components/parent/latest-releas
 import { HomeSectionOneComponent } from 'src/app/components/parent/home-section-one/home-section-one.component';
 import { SectionTitleComponent } from 'src/app/components/parent/section-title/section-title.component';
 import { FormsModule } from '@angular/forms';
+import { SeperationOfferBannerComponent } from 'src/app/components/parent/seperation-offer-banner/seperation-offer-banner.component';
+import { HomeSectionTwoComponent } from 'src/app/components/parent/home-section-two/home-section-two.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, HomeCircularCategoriesComponent, LatestReleasesComponent, HomeSectionOneComponent, SectionTitleComponent],
+  declarations: [
+    HomeComponent,
+    HomeCircularCategoriesComponent,
+    LatestReleasesComponent,
+    HomeSectionOneComponent,
+    HomeSectionTwoComponent,
+    SectionTitleComponent,
+    SeperationOfferBannerComponent
+  ],
   imports: [
     CommonModule,
     HomeRoutingModule,

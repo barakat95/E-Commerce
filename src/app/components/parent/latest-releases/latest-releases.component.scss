@@ -1,10 +1,10 @@
 @import "./../../../styles/border-radius.scss";
 .card {
-    border-radius: $border-radious;
+    border-radius: $border-radius;
     margin: 8px 0;
     width: 100%;
     button {
-        border-radius: $border-radious;
+        border-radius: $border-radius;
     }
 }
 
