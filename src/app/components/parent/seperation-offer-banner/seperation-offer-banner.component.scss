@@ -4,7 +4,7 @@ section .banner {
     width: 100%;
     border-radius: $border-radius;
     background: url('https://k.nooncdn.com/cms/pages/20220727/c88c6346e72cc9624c01f74c3a7e01f7/en_dk_eg-strip-01.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }

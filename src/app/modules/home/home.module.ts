@@ -11,6 +11,8 @@ import { SectionTitleComponent } from 'src/app/components/parent/section-title/s
 import { FormsModule } from '@angular/forms';
 import { SeperationOfferBannerComponent } from 'src/app/components/parent/seperation-offer-banner/seperation-offer-banner.component';
 import { HomeSectionTwoComponent } from 'src/app/components/parent/home-section-two/home-section-two.component';
+import { HomeSectionThreeComponent } from 'src/app/components/parent/home-section-three/home-section-three.component';
+import { SeperationOfferBannerVerticalComponent } from 'src/app/components/parent/seperation-offer-banner-vertical/seperation-offer-banner-vertical.component';
 
 
 @NgModule({
@@ -20,8 +22,10 @@ import { HomeSectionTwoComponent } from 'src/app/components/parent/home-section-
     LatestReleasesComponent,
     HomeSectionOneComponent,
     HomeSectionTwoComponent,
+    HomeSectionThreeComponent,
     SectionTitleComponent,
-    SeperationOfferBannerComponent
+    SeperationOfferBannerComponent,
+    SeperationOfferBannerVerticalComponent
   ],
   imports: [
     CommonModule,

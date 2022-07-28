@@ -30,7 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     ParentComponent,
-    SliderBannerComponent   
+    SliderBannerComponent
   ],
   imports: [
     BrowserModule,
