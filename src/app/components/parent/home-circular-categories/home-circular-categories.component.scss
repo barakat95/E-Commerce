@@ -14,7 +14,7 @@
         justify-content: center;
         align-items: center;
         transition: 0.2s all;
-        margin: 0 16px;
+        margin: 0 8px;
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
@@ -22,8 +22,8 @@
         .category-image {
             background-color: #fff;
             padding: 16px;
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
             margin-bottom: 16px;
