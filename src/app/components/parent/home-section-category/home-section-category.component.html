@@ -4,65 +4,8 @@
     </div>
     <div class="categories">
         <div nz-row [nzGutter]="16">
-            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24">
-                <div class="category">
-                    <div class="category-image">
-                        <img src="https://www.notebookcheck.net/typo3temp/_processed_/e/0/csm_181004111903200301900006K_95047b6aab.jpg" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h3>Laptops</h3>
-                    </div>
-                </div>
-            </div>
-            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24">
-                <div class="category">
-                    <div class="category-image">
-                        <img src="https://api-rayashop.freetls.fastly.net/media/catalog/product/cache/4e49ac3a70c0b98a165f3fa6633ffee1/n/p/npttfyp_e9fbd8irau404ska.jpeg" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h3>Mobiles</h3>
-                    </div>
-                </div>
-            </div>
-            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24">
-                <div class="category">
-                    <div class="category-image">
-                        <img src="https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/66/414562/1.jpg?7276" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h3>TVs</h3>
-                    </div>
-                </div>
-            </div>
-            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24">
-                <div class="category">
-                    <div class="category-image">
-                        <img src="https://target.scene7.com/is/image/Target/GUEST_5552d378-d1c0-44ac-b4f7-3f6e2e876c17" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h3>Smart Wearable</h3>
-                    </div>
-                </div>
-            </div>
-            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24">
-                <div class="category">
-                    <div class="category-image">
-                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX3Y2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1580420157712" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h3>Audio</h3>
-                    </div>
-                </div>
-            </div>
-            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24">
-                <div class="category">
-                    <div class="category-image">
-                        <img src="https://i5.walmartimages.com/asr/262923c6-aa26-45ad-aebe-90dd6e77b16d.22fa7b3e2d91f2e1d0e75f0920a17bdf.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="">
-                    </div>
-                    <div class="category-title">
-                        <h3>Video Games</h3>
-                    </div>
-                </div>
+            <div nz-col [nzXl]="4" [nzLg]="4" [nzMd]="8" [nzSm]="12" [nzXs]="24" *ngFor="let card of categoryList">
+                <app-category-card [card]="card"></app-category-card>
             </div>
         </div>
     </div>

@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-image">
+        <img [src]="card.image" alt="car">
+    </div>
+    <div class="card-content">
+        <h3 class="price">{{card.price}}</h3>
+        <label class="category text-muted">{{card.category}}</label>
+        <h4 class="title">
+            <a href="">
+                <span>{{card.title}}</span>
+            </a>
+        </h4>
+        <p class="description">{{card.description}}</p>
+        <div>
+            <nz-rate [ngModel]="card.vote" nzDisabled></nz-rate> <span class="rate-number">({{card.vote}})</span>
+        </div>
+        <button nz-button nzType="primary" (click)="addToCart(card.id)">Add to cart</button>
+    </div>
+</div>

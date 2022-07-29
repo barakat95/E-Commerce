@@ -5,7 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from 'src/app/components/parent/home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { HomeCircularCategoriesComponent } from 'src/app/components/parent/home-circular-categories/home-circular-categories.component';
-import { LatestReleasesComponent } from 'src/app/components/parent/latest-releases/latest-releases.component';
+import { LatestReleasesSectionComponent } from 'src/app/components/parent/latest-releases/latest-releases-section.component';
 import { HomeSectionOneComponent } from 'src/app/components/parent/home-section-one/home-section-one.component';
 import { SectionTitleComponent } from 'src/app/components/parent/section-title/section-title.component';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +20,7 @@ import { HomeSectionCategoryComponent } from 'src/app/components/parent/home-sec
   declarations: [
     HomeComponent,
     HomeCircularCategoriesComponent,
-    LatestReleasesComponent,
+    LatestReleasesSectionComponent,
     HomeSectionOneComponent,
     HomeSectionTwoComponent,
     HomeSectionThreeComponent,

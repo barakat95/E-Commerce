@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LatestReleasesComponent } from './latest-releases.component';
+import { CategoryCardComponent } from './category-card.component';
 
-describe('LatestReleasesComponent', () => {
-  let component: LatestReleasesComponent;
-  let fixture: ComponentFixture<LatestReleasesComponent>;
+describe('CategoryCardComponent', () => {
+  let component: CategoryCardComponent;
+  let fixture: ComponentFixture<CategoryCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LatestReleasesComponent ]
+      declarations: [ CategoryCardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LatestReleasesComponent);
+    fixture = TestBed.createComponent(CategoryCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

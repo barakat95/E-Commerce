@@ -1,0 +1,16 @@
+<div class="card" [style]="'background-color:'+card.background">
+    <div nz-row nzGutter="16">
+        <div nz-col [nzXl]="12" [nzXs]="10">
+            <div class="image">
+                <img [src]="card.image" alt="logo">
+            </div>
+        </div>
+        <div nz-col [nzXl]="12" [nzXs]="14">
+            <div class="description">
+                <p>{{ card.title }}</p>
+                <h1>{{ card.itemName }}</h1>
+                <button nz-button nzType="default">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</div>
